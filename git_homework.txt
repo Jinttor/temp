@@ -1,3 +1,4 @@
+  
 1. Заходим в терминале каталог проекта ..../Git Homework/
 2. вводим команду git init
 3. создаем файл .gitignore в корне проекта
@@ -7,6 +8,19 @@
         /admin
         /config
 4. git add .
-5. создаем новую ветку Homework
-6. создаем папку blog в ..../Git Homework/TheNewBranch
-7. создаем index.js, index.html в ..../Git Homework/TheNewBranch/blog
+
+!!! расхождение с видеоуроком!!!
+!!! git не создает новый каталог при создании ветки, а только указатель!!!
+!!! так же git не создает пустые папки!!!
+!!! поэтому создание файлов идет через копирование!!!
+
+5. создаем папку blog с файлами index.html и index.js в ..../Git Homework/
+6. Делаем комит изменений
+
+7. создаем новую ветку: git branch homework
+8. копирую каталог с файлами в новую ветку git checkout master blog/*.*
+9. Делаем коммит
+11.   Удаляем папку blog из master
+10. Создаем удаленный репозиторий temp
+10. Подключаемся к гит: git remote add origin https://github.com/Jinttor/temp.git
+11. Заливаем master ветку на гитхаб: git push -u origin master
